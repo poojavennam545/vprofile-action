@@ -1,5 +1,5 @@
 FROM maven:3.9.9-eclipse-temurin-11-focal AS BUILD_IMAGE
-RUN apt update && apt install maven -y
+
 COPY ./ vprofile-project
 RUN cd vprofile-project &&  mvn install 
 
